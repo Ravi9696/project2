@@ -1,0 +1,24 @@
+/**
+ * 
+ */
+app.controller('BLogPostController',function($scope,BlogPostService,$location){
+	
+	
+	$scope.saveBlogPost=function(){
+		console.log($scope.blogPost)
+		BlogPostService.saveBlogPost($scope.blogPost).then (function(response){
+		$location.path("/home")	
+		},function(response){
+			
+			if(response.status==401)
+				$location.path("/login")
+				else
+					$location.path('saveblogpost')
+			
+			
+		})
+		
+		
+	}
+	
+})

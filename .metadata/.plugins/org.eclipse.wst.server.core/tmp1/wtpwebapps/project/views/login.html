@@ -1,0 +1,64 @@
+  <!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title><style>
+
+
+body  {
+    background-image: url("https://www.jobs-hunter.com/wp-content/uploads/2017/03/slider-pic-1.jpg");
+  
+}
+
+input[type=text], input[type=password] {
+    width: 35%;
+    padding: 22px 22px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #1E90FF;
+    color: black;
+    padding: 18px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 35%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+</style></head><body >
+<br><br><br><br><br><br><br><br><br><br><br><br>
+ 
+ 
+  <center><span style="color:red">{{loginFail}}</span></center>
+
+  
+  <center><input type="text" placeholder="Enter Username" ng-model="user.username" class="form-control"></td></center>
+  
+  
+  
+ <center><input type="password" placeholder="Enter Password" ng-model="user.password" class="form-control"></center>
+  
+  
+  <center> <button type="submit" ng-click="login()">Login</button></center>
+  
+  </body>
+  </html>

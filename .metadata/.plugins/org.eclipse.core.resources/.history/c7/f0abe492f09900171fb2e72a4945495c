@@ -1,0 +1,86 @@
+    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+
+
+input[type=text], input[type=password] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.btn {
+    border: none;
+    color: white;
+    padding: 10px 150px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.danger{background-color: #f44336;} 
+.danger:hover {background-color: #da190b;;}
+
+.info {background-color: #2196F3;} /* Blue */
+.info:hover {background: #0b7dda;}
+
+
+
+   
+
+ 
+    
+
+  
+  
+}
+
+
+</style></head><body>
+
+
+<center>
+
+
+  
+ 
+  
+
+
+<form action="${login}" method="post">
+  <div class="container">
+
+  <center><h2> Log In </h2></center></td></tr>
+  
+  <center> 
+    <input type="text" placeholder="Enter Username" ng-model="user.username" class="form-control"></td></tr></center><br>
+
+
+    <center>
+    <input type="password" placeholder="Enter Password" ng.model="user.password" class="form-control"></td></tr></center><br><br>
+   
+    
+      
+    <center><button class="btn info" type="submit">Login</button></center></td></tr>
+    </div>
+   </form>
+    <center></center><h2>You are New to visit?</h2></center><center>
+ 
+			<a href=""><button class="btn danger">Sign up</button></a></center>
+		
+			
+			
+   
+   
+  
+
+
+</body>
+</html>
+

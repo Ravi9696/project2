@@ -1,0 +1,6 @@
+127.0.0.1 - - [12/Sep/2017:16:54:06 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [12/Sep/2017:16:54:16 +0530] "GET /project/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [12/Sep/2017:16:54:16 +0530] "GET /project/controller/usercontroller.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [12/Sep/2017:16:54:16 +0530] "GET /project/service/userservice.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [12/Sep/2017:16:54:16 +0530] "GET /project/js/app.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [12/Sep/2017:16:54:52 +0530] "GET /project/views/home.html HTTP/1.1" 404 1040

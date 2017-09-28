@@ -1,0 +1,22 @@
+package com.niit.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.niit.Dao.BlogPostDao;
+import com.niit.Dao.UserDao;
+
+@Controller
+public class BlogPostController {
+	@Autowired
+	private BlogPostDao blogPostDao;
+	@Autowired
+	private UserDao userDao;
+	@RequestMapping(value="/saveblogpost" ,method=RequestMethod.POST)
+	public ResponseEntity<?>saveBlogPost(@RequestBody BlogPost blogPost){
+		
+	}
+	
+
+}

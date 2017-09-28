@@ -1,0 +1,7 @@
+package com.niit.Dao;
+
+
+public interface BlogPostDao{
+	
+
+}
