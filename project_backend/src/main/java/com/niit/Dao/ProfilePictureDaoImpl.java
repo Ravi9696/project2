@@ -17,7 +17,7 @@ public class ProfilePictureDaoImpl implements ProfilePictureDao{
 		session.saveOrUpdate(profilePicture);
 	}
 
-	public ProfilePicture getProfilePicture(String username) {
+	public ProfilePicture getProfilePic(String username) {
 		Session session=sessionFactory.getCurrentSession();
 		//select * from profilepicture where username='admin'
 		ProfilePicture profilePicture=(ProfilePicture)session.get(ProfilePicture.class, username);

@@ -1,9 +1,0 @@
-package com.niit.Dao;
-
-import com.niit.model.BlogPost;
-
-public interface BlogPostDao{
-	void saveBlogPost(BlogPost blogPost);
-	
-
-}

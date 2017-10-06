@@ -1,7 +1,0 @@
-package com.niit.Dao;
-import javax.transaction.Transactional;
-
-public interface BlogPostDao{
-	
-
-}

@@ -43,7 +43,7 @@ public ResponseEntity<?> uploadProfilePicture(@RequestParam CommonsMultipartFile
 			return null;
 		else
 		{
-			ProfilePicture profilePic=profilePictureDao.getProfilePicture(username);
+			ProfilePicture profilePic=profilePictureDao.getProfilePic(username);
 			if(profilePic==null)
 				return null;
 			else

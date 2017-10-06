@@ -4,7 +4,34 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<body>sssssssssssssss
+<body>
+<div ng-show="currentUser.role=='ADMIN'">
+<marquee width="100%" behavior="slide">
+<b>List Of Blogs Waiting For Approval</b><br>
+<table class="table table-striped">
+<thead><tr><td>BlogPost Title</td><td>Posted On</td></tr></thead>
+<tbody>
+<tr ng-repeat="blogPost in blogPostsWaitingForApproval">
+<td><a href="#/blogpostforapproval/{{blogPost.id}}">{{blogPost.blogTitle}}</a></td><td>{{blogPost.postedOn | date:'MM/dd/yyyy  HH:mm'}}</td>
+</tr>
+</tbody>
+</table>
+</marquee>
+</div>
+<div>
+<br><br><br>
+<b>List Of Blogs Which Are Approved</b>
+<table class="table table-striped">
+<thead>
+<tr><td>BlogPost Title</td><td>Posted On</td></tr>
+</thead>
+<tbody>
+<tr ng-repeat="blogPost in blogPostsApproved">
+<td><a href="#/blogpostdetail/{{blogPost.id}}">{{blogPost.blogTitle}}</a></td><td>{{blogPost.postedOn | date:'MM/dd/yyy HH:mm'}}</td></tr>
+
+</tbody>
+</table>
+</div>
 
 </body>
 </html>
